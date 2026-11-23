@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customize My Page</title>
+  <link rel="stylesheet" href="PartnerLab2Style.css">
+</head>
+<body>
+<nav style="background: black; padding: 10px 20px;">
+        <a href="../index.html" style="color: whitesmoke">&larr; Back to Portfolio</a>
+    </nav>
+  <h1 id="greeting">Hello User!</h1>
+  <p id="message">Welcome to my page. Use the form below to customize it.</p>
+
+  <hr>
+
+  <h2>Customize</h2>
+
+  <div class="field">
+    <label for="nameInput">Your name:</label>
+    <input type="text" id="nameInput">
+  </div>
+
+  <div class="field">
+    <label for="messageInput">Your message:</label>
+    <input type="text" id="messageInput">
+  </div>
+
+  <div class="field">
+    <label for="colorSelect">Background color:</label>
+    <select id="colorSelect">
+      <option value="white">White</option>
+      <option value="lightblue">Light Blue</option>
+      <option value="lightgreen">Light Green</option>
+      <option value="lightyellow">Light Yellow</option>
+      <option value="lightpink">Light Pink</option>
+      <option value="lavender">Lavender</option>
+    </select>
+  </div>
+
+  <button onclick="updatePage()">Submit</button>
+
+  <hr>
+
+  <h2>To Do List</h2>
+
+  <div class="field">
+    <label for="todoInput">New to do item:</label>
+    <input type="text" id="todoInput">
+    <button onclick="addTodo()">Add</button>
+  </div>
+
+  <ol id="todoList"></ol>
+
+  <script src="partnerLab2javascript.js"></script>
+</body>
+</html>

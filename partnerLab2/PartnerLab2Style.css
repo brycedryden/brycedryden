@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #3366cc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+h2 {
+  color: #3366cc;
+  border-bottom: 2px solid #3366cc;
+  padding-bottom: 4px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  margin: 30px 0;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+  color: #254a99;
+}
+
+input, select {
+  padding: 6px;
+  font-size: 1em;
+  border: 2px solid #99b3e6;
+  border-radius: 4px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #3366cc;
+}
+
+button {
+  padding: 7px 16px;
+  font-size: 1em;
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff8800;
+}
+
+ol li {
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-left: 4px solid #ff8800;
+  border-radius: 4px;
+}

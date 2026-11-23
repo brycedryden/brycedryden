@@ -1,0 +1,114 @@
+/* ===== CSS variables (custom properties) - bonus attribute #1 ===== */
+:root {
+  --ink-brown: #3b2a1a;
+  --paper-tan: #f2e8d5;
+  --accent-red: #8c2f1e;
+  --card-shadow: rgba(59, 42, 26, 0.35);
+}
+
+/* Set the background color of the pages */
+body {
+  background-color: var(--paper-tan);
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink-brown);
+  margin: 0;
+  padding: 0 1.5rem 3rem;
+}
+
+/* Multiple selectors used to set a single style */
+h1, h2, h3 {
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--accent-red);
+  letter-spacing: 1px;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px double var(--ink-brown); /* border around an element */
+}
+
+.subtitle {
+  font-style: italic;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  background-color: #fffdf7;
+  border: 1px solid #d8c9a3; /* border around an element */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px var(--card-shadow); /* bonus attribute #2 */
+  transition: transform 0.25s ease, box-shadow 0.25s ease; /* bonus: transition */
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px var(--card-shadow);
+}
+
+/* Specify a field by id */
+#feature-image {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto 0.5rem;
+  border: 3px solid var(--ink-brown);
+  border-radius: 6px;
+}
+
+#specs-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#specs-table th, #specs-table td {
+  border: 1px solid var(--ink-brown);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+#specs-table th {
+  background-color: var(--ink-brown);
+  color: var(--paper-tan);
+  width: 30%;
+}
+
+/* Multiple selectors, single style */
+ul, ol {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent-red);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent-red);
+}
+
+a:hover {
+  color: var(--ink-brown);
+  border-bottom: 1px solid var(--ink-brown);
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #6b5a44;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--ink-brown);
+  font-size: 0.95rem;
+}

@@ -1,0 +1,355 @@
+body {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #414042;
+    background-color: #FAFAF1;
+}
+
+h1, h2, h3 {
+    font-family: "Instrument Serif", Times, serif;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===== Reusable accent span ===== */
+/* class selector used on inline text throughout the site */
+.accent-text {
+    color: #8B5E3C;
+    font-style: italic;
+}
+
+/* ===== Header & Navigation ===== */
+/* Foreground + background set with hex values on the same element */
+.site-header {
+    background-color: #2F2A26;
+    color: #FAFAF1;
+    padding: 1.25rem 2rem;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-family: "Instrument Serif", Times, serif;
+    font-size: 1.75rem;
+    letter-spacing: 0.02em;
+}
+
+.main-nav a {
+    margin-left: 1.75rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:first-child {
+    margin-left: 0;
+}
+
+/* hover selector: link glows gold and underlines on mouseover */
+.main-nav a:hover {
+    color: #C9A46A;
+    border-bottom: 1px solid #C9A46A;
+}
+
+/* ===== Page content wrapper ===== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* ===== About page ===== */
+/* ID selector styling the whole page in one rule */
+#page-about {
+    background-color: #FBF7EF;
+}
+
+.about-hero .lede {
+    max-width: 640px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* clearfix so this section's box wraps fully around the floated photo */
+.about-content {
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+/* floating element: image + caption text, floated with margins so
+   the surrounding paragraph text wraps around it */
+.about-photo {
+    float: left;
+    width: 320px;
+    margin: 0 2rem 1.5rem 0;
+    background-color: #FFFFFF;
+    border: 1px solid #E4DCCB;
+    padding: 0.75rem;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.photo-caption {
+    font-size: 0.85rem;
+    color: #7A7570;
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+/* ===== Values section ===== */
+.values-section {
+    margin-top: 3rem;
+    border-top: 1px solid #E4DCCB;
+    padding-top: 2.5rem;
+}
+
+.value-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+/* class selector applied to three separate div elements */
+.value-item {
+    flex: 1 1 240px;
+    background-color: #FFFFFF;
+    border: 1px solid #E4DCCB;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* hover selector: card lifts slightly with a soft shadow */
+.value-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.value-item h3 {
+    margin-top: 0;
+    color: #8B5E3C;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    display: inline-block;
+    background-color: #8B5E3C;
+    color: #FAFAF1;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 1px solid #8B5E3C;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #FAFAF1;
+    color: #8B5E3C;
+}
+
+/* ===== Home page ===== */
+#page-index {
+    background-color: #FAFAF1;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 360px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+    max-width: 480px;
+}
+
+.hero-image {
+    flex: 1 1 320px;
+}
+
+.hero-image img {
+    border-radius: 2px;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    border-top: 1px solid #E4DCCB;
+    padding-top: 2.5rem;
+}
+
+/* class selector applied to three feature blocks */
+.feature-item {
+    flex: 1 1 240px;
+    text-align: left;
+}
+
+.feature-item .feature-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #8B5E3C;
+}
+
+.cta-banner {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    background-color: #FBF7EF;
+    border: 1px solid #E4DCCB;
+    padding: 2.5rem;
+}
+
+.cta-banner img {
+    max-width: 220px;
+    border-radius: 2px;
+}
+
+.cta-text {
+    flex: 1 1 300px;
+}
+
+.cta-text h2 {
+    margin-top: 0;
+}
+
+/* ===== Products page ===== */
+#page-products {
+    background-color: #FAFAF1;
+}
+
+.products-intro .lede {
+    max-width: 640px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+}
+
+/* class selector applied to every product card */
+.tea-card {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #E4DCCB;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* hover selector: card lifts and border shifts to the accent color */
+.tea-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+    border-color: #8B5E3C;
+}
+
+.tea-card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+}
+
+.tea-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.tea-card .price {
+    font-family: "Instrument Serif", Times, serif;
+    font-size: 1.2rem;
+    color: #8B5E3C;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* class selector applied to every badge span; bg + fg set with hex values */
+.tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #2F2A26;
+    color: #FAFAF1;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.3rem 0.6rem;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: #2F2A26;
+    color: #FAFAF1;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.site-footer .tagline {
+    font-family: "Instrument Serif", Times, serif;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
